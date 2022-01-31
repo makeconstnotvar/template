@@ -1,0 +1,99 @@
+.diagram {
+  background-color: $white;
+  border-radius: 8px;
+  box-shadow: $box-shadow;
+  z-index: 1;
+  opacity: 1;
+
+  &.cloak {
+    opacity: 0;
+  }
+}
+
+.subjects {
+  &.react-flow {
+    overflow: visible;
+    height: auto;
+    width: auto;
+  }
+
+  .react-flow__renderer {
+    position: static;
+  }
+}
+
+.node rect {
+  stroke: #333;
+  fill: #fff;
+}
+
+.edgePath path {
+  stroke: #333;
+  fill: #333;
+  stroke-width: 1.5px;
+}
+
+.react-flow__handle-right,
+.react-flow__handle-left,
+.react-flow__nodes,
+.react-flow__node-default {
+  will-change: transform;
+}
+
+.react-flow__node.react-flow__node-default.selected,
+.react-flow__node.react-flow__node-default.selected:hover {
+  box-shadow: 0 0 6px 0 #1a192b70;
+}
+
+.react-flow__node.react-flow__node-input,
+.node-child.react-flow__node-default {
+  border-color: #1a192b;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 8px;
+  width: 180px;
+}
+
+.node-icon.react-flow__node-default {
+  border: none;
+  border-radius: 8px;
+  padding: 5px;
+  width: 135px;
+  font-size: 14px;
+
+  img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .aws-icon {
+    font-size: 80px;
+    margin: 20px;
+    color: $scheme-green;
+  }
+}
+
+.edge-blue {
+  .react-flow__edge-path {
+    stroke: $scheme-blue;
+  }
+}
+
+
+.edge-purple {
+  .react-flow__edge-path {
+    stroke: $scheme-purple;
+  }
+}
+
+.edge-red {
+  .react-flow__edge-path {
+    stroke: $scheme-red;
+  }
+}
+
+.edge-green {
+  .react-flow__edge-path {
+    stroke: $scheme-green;
+  }
+}

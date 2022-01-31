@@ -1,0 +1,66 @@
+.ticket-form {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-row-gap: 10px;
+}
+
+.external-link {
+  color: $dark-green;
+  font-weight: 600;
+}
+
+.store-value {
+  color: $dark-green;
+}
+
+
+.priority-indicator {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.user-icon {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  user-select: none;
+  font-size: 12px;
+  font-weight: 400;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+
+.ticket-table-icon {
+  font-size: 18px;
+}
+
+.secret-icon {
+  color: #4b0082
+}
+
+.accelerated-icon {
+  color: $red;
+}
+
+.ticket-table-pill {
+  user-select: none;
+  text-align: center;
+  padding: 2px 7px;
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.ticket-nps {
+  background-color: $red;
+}
+
+.ticket-ext {
+  background-color: $grey;
+}

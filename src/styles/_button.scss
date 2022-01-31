@@ -1,0 +1,43 @@
+$custom-theme-colors: (
+  "orange": #ff9800,
+  "deep-purple": #673ab7
+);
+
+@each $color, $value in $custom-theme-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
+
+.btn-period {
+  padding: 0;
+  font-size: 12px;
+  width: 80px;
+  border-radius: $border-radius;
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+.btn-mini {
+  //вместе btn-outline-
+  padding: 1px 6px;
+  border: none;
+}
+
+.btn-xs {
+  padding: 1px 4px;
+  font-size: 12px;
+}
+
+.btn-xxs {
+  padding: 1px 4px;
+  font-size: 8px;
+}

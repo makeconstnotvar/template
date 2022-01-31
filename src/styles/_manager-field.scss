@@ -1,0 +1,41 @@
+.manager-field {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+
+  &_full-width {
+    width: 100%;
+
+    & > div {
+      width: 100%;
+    }
+
+    & > input,
+    & > textarea {
+      width: calc(100% - 10px);
+    }
+  }
+
+  &__required {
+    font-size: 20px;
+    color: $red;
+  }
+
+  &__name {
+    text-align: left;
+    min-width: 160px;
+    max-width: 160px;
+  }
+
+  &__value {
+    display: flex;
+    flex: 1;
+  }
+
+  &__value-checkbox {
+    display: flex;
+    min-height: 20px;
+    min-width: 20px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,58 @@
+.period-badge {
+  background-color: #ccc;
+  padding: 1px 4px;
+  font-weight: bold;
+  border-radius: $border-radius;
+
+  &:empty {
+    visibility: hidden;
+  }
+}
+
+.store-badges {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px 10px;
+
+  &.for-filter {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+.store-badge {
+  display: inline-flex;
+  font-size: 14px;
+  overflow: hidden;
+
+
+  &-info {
+    border-radius: 0 $border-radius $border-radius 0;
+    background-color: #f2f2f2;
+    padding: 2px 4px;
+    border: solid #e6e6e6;
+    border-width: 1px 1px 1px 0;
+
+    &.no {
+      border-radius: 0;
+      min-width: 43px;
+    }
+
+    &.for-filter {
+      border-radius: $border-radius;
+      cursor: default;
+      user-select: none;
+    }
+  }
+
+  &-close {
+    border-radius: 6px 0 0 6px;
+    padding: 1px 4px;
+    border: 1px solid #f5c6cb;
+    background-color: #f8d7da;
+
+    &:hover {
+      color: #721c24;
+      cursor: pointer;
+    }
+  }
+}

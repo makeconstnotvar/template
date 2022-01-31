@@ -1,0 +1,31 @@
+@mixin menu-item-bg-color-transition {
+  background-color: #efefef;
+  transition: background-color 300ms ease-in-out;
+}
+
+$font-family: 'Roboto', Arial, sans-serif;
+$base-font-family: Segoe UI, Arial, sans-serif;
+$body-text-color: #2c3e50;
+$body-back-color: #f5f5f7;
+$red: #e53934;
+$grey: #BEBFC7;
+$brick: #8B0000;
+$white: #fff;
+$sidebar-back-color: #dddee3;
+$box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+$drop-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
+$header-back-color: #fff;
+$brand-main-color: #28a745;
+$blue: #007bff;
+$dark-green: #01ae25;
+$brand-main-color-alt: #fff;
+$bg-light-color: #efefef;
+$silver-color: silver;
+$border-radius: 6px;
+
+//схема
+
+$scheme-green: green;
+$scheme-blue: #0041d0;
+$scheme-purple: purple;
+$scheme-red: red;

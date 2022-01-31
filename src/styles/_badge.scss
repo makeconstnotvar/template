@@ -1,0 +1,42 @@
+.badge {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  background: $gray-600;
+  color: #FFFFFF;
+  font-weight: 400;
+  padding: 6px 10px;
+  border-radius: 4px;
+
+  &_xs {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 4px;
+  }
+
+  &_xxs {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 4px;
+  }
+
+  &_light-green {
+    background-color: #55d271d6;
+  }
+
+  &_brick {
+    background-color: $brick;
+  }
+
+  &_orange {
+    background-color: $orange;
+  }
+
+  &_purple {
+    background-color: $purple;
+  }
+
+  &_black {
+    background-color: $black;
+  }
+}

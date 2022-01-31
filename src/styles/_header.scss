@@ -1,0 +1,72 @@
+.header {
+  height: 80px;
+  padding: 0 20px;
+  background-color: $header-back-color;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12);
+  z-index: 10;
+
+  & + div {
+    //хак для роутера
+    display: flex;
+  }
+}
+
+.header-bort {
+  margin: 0 20px;
+  background-color: #dddee3;
+  width: 2px;
+  height: 30px;
+}
+
+.header-title {
+  font-family: $font-family;
+  font-size: 26px;
+  font-weight: 900;
+  color: $brand-main-color;
+}
+
+.header-mock {
+  color: $brand-main-color;
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: -4px;
+}
+
+.header-exit {
+  color: $body-text-color;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 300ms;
+
+  &:hover {
+    color: $brand-main-color;
+    transition: color 300ms;
+  }
+}
+
+.header-version {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 3px;
+}
+
+.header-fullname {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.header-circle {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.6);
+}

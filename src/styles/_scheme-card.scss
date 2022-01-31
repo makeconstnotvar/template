@@ -1,0 +1,152 @@
+.scheme-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #009900;
+  overflow: hidden;
+
+  &_operator {
+    width: 170px;
+    min-height: 200px;
+  }
+
+  &_supervisor {
+    width: 270px;
+    min-height: 320px;
+    border-color: #ffc107;
+    & > .scheme-card__head {
+      border-bottom: 1px solid #ffc107;
+      background-color: #ffc107;
+    }
+  }
+
+  &_manager {
+    width: 270px;
+    min-height: 320px;
+    border-color: #71b3ff;
+    & > .scheme-card__head {
+      border-bottom: 1px solid #71b3ff;
+      background-color: #71b3ff;
+    }
+  }
+
+  &__head {
+    height: 32px;
+    padding: 4px 8px;
+    font-size: 14px;
+    text-align: left;
+    border-bottom: 1px solid #009900;
+    background-color: #e6e6e6;
+    box-shadow: 16px 20px 16px -10px rgba(255, 255, 255, 0.5) inset;
+    display: flex;
+    align-items: center;
+    button {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: left;
+    padding: 8px;
+
+    ul {
+      padding-left: 16px;
+    }
+
+    &_group {
+      flex-wrap: wrap;
+      flex-direction: row;
+      padding: 20px 10px 10px 10px;
+      justify-content: space-around;
+      gap: 6px;
+    }
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 14px;
+    &_xs {
+      font-size: 12px;
+    }
+  }
+
+  &__markers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    &_blue {
+      background-color: $blue;
+      border-radius: 40%;
+      padding: 2px 4px;
+      color: white;
+    }
+  }
+
+  &_success {
+    border-color: #009900;
+    & > .scheme-card__head {
+      background-color: #009900;
+      border-bottom: 1px solid #009900;
+    }
+  }
+  &_info {
+    border-color: #d5e8d4;
+    & > .scheme-card__head {
+      background-color: #d5e8d4;
+      border-bottom: 1px solid #d5e8d4;
+    }
+  }
+
+  &_danger {
+    border-color: #fd4658;
+    & > .scheme-card__head {
+      border-bottom: 1px solid #fd4658;
+      background-color: #fd4658;
+    }
+  }
+
+  &.yellow {
+    border-color: #ffec07;
+    & > .scheme-card__head {
+      border-bottom: 1px solid #ffec07;
+      background-color: #ffec07;
+    }
+  }
+
+  &.blue {
+    border-color: #71b3ff;
+    & > .scheme-card__head {
+      border-bottom: 1px solid #71b3ff;
+      background-color: #71b3ff;
+    }
+  }
+
+  &.pink {
+    border-color: #fb86c6;
+    & > .scheme-card__head {
+      border-bottom: 1px solid #fb86c6;
+      background-color: #fb86c6;
+    }
+  }
+
+  &.red {
+    border-color: #f50d25;
+    & > .scheme-card__head {
+      border-bottom: 1px solid #f50d25;
+      background-color: #f50d25;
+    }
+  }
+
+  &_disabled {
+    opacity: 0.5;
+  }
+}

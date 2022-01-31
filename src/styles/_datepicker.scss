@@ -1,0 +1,36 @@
+.datepicker,
+.timepicker {
+  width: 100%;
+  font-weight: 300;
+  padding: 7px 14px;
+  border-radius: $border-radius;
+  font-size: 16px;
+  border: 1px solid $silver-color;
+
+  &:hover {
+    border-color: black;
+  }
+
+  &:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem #007bff40;
+    outline: 0 none;
+  }
+
+  &.error-picker {
+    border-color: $red;
+    color: $red;
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem #e5393440;
+    }
+  }
+
+  &.w300p {
+    width: 300px;
+  }
+
+  &.w244p {
+    width: 244px;
+  }
+}

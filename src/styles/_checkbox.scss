@@ -1,0 +1,93 @@
+.nice-checkbox {
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+
+  input {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  input + .nice-checkbox-icon:before {
+    display: inline-flex;
+    font-size: 34px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 34px;
+    height: 30px;
+    content: "\2610";
+  }
+
+  input.is-invalid + .nice-checkbox-icon:before {
+    color: #dc3545;
+  }
+
+  input ~ .nice-checkbox-icon2 {
+    margin-right: 10px;
+    font-size: 20px;
+
+    &.fa-check-square {
+      display: none;
+    }
+
+    &.fa-square {
+      display: inline-block;
+    }
+  }
+
+  input:checked ~ .nice-checkbox-icon2 {
+    &.fa-check-square {
+      display: inline-block;
+    }
+
+    &.fa-square {
+      display: none;
+    }
+  }
+
+  input:checked + .nice-checkbox-icon:before {
+    content: "\2611";
+    color: #007bff;
+  }
+
+  &:hover {
+    input + .nice-checkbox-icon:before {
+      color: #007bff;
+    }
+  }
+}
+
+.custom-checkbox {
+  .custom-control-label::before {
+    @include border-radius($custom-checkbox-indicator-border-radius);
+  }
+
+  .custom-control-input:checked ~ .custom-control-label {
+    &::after {
+      background-image: escape-svg($custom-checkbox-indicator-icon-checked);
+    }
+  }
+
+  .custom-control-input:indeterminate ~ .custom-control-label {
+    &::before {
+      border-color: $custom-checkbox-indicator-indeterminate-border-color;
+      @include gradient-bg($custom-checkbox-indicator-indeterminate-bg);
+      @include box-shadow($custom-checkbox-indicator-indeterminate-box-shadow);
+    }
+
+    &::after {
+      background-image: escape-svg($custom-checkbox-indicator-icon-indeterminate);
+    }
+  }
+
+  .custom-control-input:disabled {
+    &:checked ~ .custom-control-label::before {
+      @include gradient-bg($custom-control-indicator-checked-disabled-bg);
+    }
+
+    &:indeterminate ~ .custom-control-label::before {
+      @include gradient-bg($custom-control-indicator-checked-disabled-bg);
+    }
+  }
+}

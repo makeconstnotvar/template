@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll !important;
+  min-height: 100vh;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $body-back-color;
+  margin: 0;
+  min-height: 100vh;
+  color: $body-text-color;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+input,
+textarea {
+  font-family: $font-family;
+}
+
+textarea {
+  resize: vertical;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.router {
+  min-height: 100vh;
+}
+
+.with-header {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 80px 1fr;
+}
+
+.hide {
+  display: none !important;
+}
+
+.dashed {
+  border-bottom: 1px dashed;
+  transition: color 300ms;
+  font-weight: bold;
+
+  &:hover {
+    color: #3f51b5;
+    cursor: pointer;
+    transition: color 300ms;
+  }
+}
+
+.link {
+  color: $black
+}
+
+.undecorate {
+  text-decoration: none;
+  color: initial;
+
+  &:hover,
+  &:active,
+  &:visited {
+    text-decoration: none;
+    color: initial;
+  }
+}
+
+.unselectable {
+  user-select: none;
+}
+
+.backlight {
+  color: $dark-green;
+  transition: all 0.3s ease-in-out;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
+.green,
+.enabled {
+  color: $brand-main-color;
+}
+
+.disabled {
+  color: $gray-500;
+}

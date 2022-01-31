@@ -1,0 +1,112 @@
+.base-table-box {
+  background-color: #fff;
+  box-shadow: $box-shadow;
+  border-radius: 8px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  display: inline-block;
+}
+
+.base-table {
+  border-collapse: collapse;
+
+  th {
+    background-color: #dddee3;
+    padding: 10px;
+    font-size: 12px;
+    vertical-align: top;
+    text-align: left;
+    border: 0 solid #f5f5f5;
+
+    &:not(:last-child) {
+      border-width: 0 1px 0 0;
+    }
+  }
+
+  td {
+    padding: 5px 10px;
+    border: 0 solid #ddd;
+
+    &:not(:last-child) {
+      border-width: 0 1px 0 0;
+    }
+
+    &.group-icon {
+      padding: 2px;
+
+      img {
+        height: 38px;
+      }
+    }
+
+    &.nowrap {
+      white-space: nowrap;
+    }
+
+    &.right {
+      text-align: right;
+    }
+
+    &.action {
+      padding: 10px 20px;
+      width: 58px;
+    }
+
+    &.active {
+      background-color: $brand-main-color;
+      color: #fff;
+    }
+
+    &.action:not(.active):hover {
+      color: $brand-main-color;
+    }
+  }
+
+  .link {
+    color: $brand-main-color;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+
+  tr.hoverable:hover {
+    background-color: #ececec;
+    cursor: pointer;
+  }
+}
+
+.base-table-box.statistic {
+  width: 600px;
+
+  .base-table {
+    width: 100%;
+
+    td:nth-child(2) {
+      text-align: right;
+      font-size: 20px;
+    }
+  }
+}
+
+.general-info {
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: $box-shadow;
+  border-radius: 4px;
+  display: inline-flex;
+}
+
+.general-info-name {
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.general-info-value {
+  padding: 5px 10px;
+}

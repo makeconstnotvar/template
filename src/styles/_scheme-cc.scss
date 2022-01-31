@@ -1,0 +1,35 @@
+.scheme-cc {
+  z-index: 1;
+  border-radius: 8px;
+
+  & .react-flow__controls {
+    top: 10px;
+    bottom: auto;
+  }
+
+  & .react-flow__renderer {
+    background: #FFFFFF;
+    overflow: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  }
+
+  & .react-flow__node {
+    cursor: auto;
+    user-select: auto;
+  }
+
+  .react-flow__edge-path {
+    stroke-width: 3px;
+  }
+
+  & .react-flow__node-default, .react-flow__node-input, .react-flow__node-output {
+    border: none;
+    padding: 0;
+    background: none;
+
+    & > .scheme-card {
+      height: 100%;
+    }
+  }
+}

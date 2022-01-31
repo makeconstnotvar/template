@@ -1,0 +1,143 @@
+.drops,
+.filter-box {
+  .drop {
+    &__control {
+      min-height: 38px;
+      width: 300px;
+      border-radius: 8px;
+    }
+
+    &__control.left {
+      border-top-left-radius: 0px !important;
+      border-bottom-left-radius: 0px !important;
+    }
+
+    &__control:hover {
+      border-color: #000;
+    }
+
+    &__menu {
+      z-index: 3;
+    }
+
+    &__dropdown-indicator {
+      align-self: stretch;
+      color: #888;
+      border-left: 1px solid hsl(0, 0%, 80%);
+      border-radius: 0 8px 8px 0;
+    }
+
+    &__clear-indicator {
+      align-self: stretch;
+      height: 38px;
+
+      &:hover {
+        background-color: #e6e6e6;
+        cursor: pointer;
+      }
+    }
+
+    &__indicator-separator {
+      display: none;
+    }
+
+    &__indicators-container {
+      border-top-right-radius: 7px;
+      border-bottom-right-radius: 7px;
+      overflow: hidden;
+    }
+
+    &__option {
+      display: flex;
+      align-items: center;
+
+      .option-marker::after {
+        content: '\25FC';
+        width: 15px;
+        height: 5px;
+        margin-right: 5px;
+      }
+    }
+
+    &__menu {
+      top: calc(100% - 0px);
+      border-radius: 4px 4px 8px 8px;
+      overflow: hidden;
+      box-shadow: $drop-shadow;
+      margin: 0;
+      width: calc(100% - 6px);
+      left: 3px;
+      z-index: 5;
+    }
+
+    &__menu-list {
+
+      //@include custom-scroll;
+    }
+
+    &__control--is-focused {
+      border-color: #80bdff;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    &__control--is-focused:hover {
+      border-color: #80bdff;
+    }
+
+    &__single-value {
+      color: #6c757d;
+      //font-weight: 400;
+    }
+  }
+
+  .mini {
+    .drop {
+      &__control {
+        width: 50px;
+        min-width: auto;
+      }
+
+      &__indicator {
+        display: none;
+      }
+    }
+  }
+
+  .invert {
+    .drop {
+      &__control {
+        background-color: #6c757d;
+      }
+
+      &__single-value {
+        color: white;
+      }
+    }
+  }
+
+  .input-group-prepend {
+    .drop {
+      &__control {
+        border-radius: 8px 0 0 8px;
+      }
+
+
+    }
+  }
+
+  .w-100 {
+    .drop__control {
+      width: 100%;
+    }
+  }
+
+
+}
+
+.drop-item-img {
+  img {
+    height: 35px;
+    margin: -5px 10px -5px 0;
+  }
+}

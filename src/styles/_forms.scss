@@ -1,0 +1,25 @@
+.lines-form {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  border: 1px solid #dee2e6;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.sla-form {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+}
+
+.line-row:not(:last-child) {
+  border-bottom: 1px dashed #dee2e6;
+  margin-bottom: 20px;
+}
+
+.routes-period {
+  & > div {
+    width: 50%;
+    margin-right: 0;
+  }
+}

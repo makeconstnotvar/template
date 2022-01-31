@@ -1,0 +1,15 @@
+.anime-bubble-up.show .popover {
+  animation: bubble-up;
+  transition: transform 300ms,opacity 300ms;
+}
+
+@keyframes bubble-up {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,19 @@
+.MuiOutlinedInput-root.Mui-focused {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #007bff40;
+
+  .MuiOutlinedInput-notchedOutline {
+    border-color: transparent;
+  }
+}
+
+.input-group-prepend + .MuiFormControl-root .MuiOutlinedInput-root {
+  border-radius: 0 8px 8px 0;
+}
+
+.mui-w100 {
+  .MuiOutlinedInput-root {
+    width: 100%;
+  }
+}

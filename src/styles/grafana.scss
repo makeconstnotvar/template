@@ -1,0 +1,10 @@
+.grafana-app {
+  .sidemenu {
+    display: none;
+  }
+  .navbar {
+    .div:nth-child(2) {
+      display: none;
+    }
+  }
+}
